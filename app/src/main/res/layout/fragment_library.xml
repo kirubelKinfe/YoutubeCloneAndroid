@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragments.LibraryFragment"
+    android:fillViewport="true"
+    android:fitsSystemWindows="true"
+    android:scrollbars="none">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Recent"
+                android:textSize="16sp"
+                android:textColor="@android:color/black"
+                android:padding="5dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@android:color/holo_blue_light"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorDivider"
+                android:layout_marginTop="15dp"
+                android:id="@+id/view"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/header2"
+            android:layout_below="@+id/header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="History"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:padding="5dp"
+                android:drawablePadding="20dp"
+                app:drawableStartCompat="@drawable/history"/>
+
+            <TextView
+                android:layout_marginTop="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Your Videos"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:padding="5dp"
+                android:drawablePadding="20dp"
+                app:drawableStartCompat="@drawable/your_videos"/>
+
+            <TextView
+                android:layout_marginTop="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Downloads"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:padding="5dp"
+                android:drawablePadding="20dp"
+                app:drawableStartCompat="@drawable/download"/>
+
+            <TextView
+                android:layout_marginTop="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Watch Later"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:padding="5dp"
+                android:drawablePadding="20dp"
+                app:drawableStartCompat="@drawable/watch_later"/>
+
+            <TextView
+                android:layout_marginTop="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Liked Videos"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:padding="5dp"
+                android:drawablePadding="20dp"
+                app:drawableStartCompat="@drawable/liked_videos"/>
+
+            <View
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorDivider"
+                android:id="@+id/View" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/center"
+            android:layout_below="@+id/header2">
+
+            <TextView
+                android:id="@+id/text2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Playlist"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:padding="5dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp" />
+
+            <TextView
+                android:id="@+id/text3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="New Playlist"
+                android:textSize="16sp"
+                android:textColor="#2242EF"
+                android:padding="5dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_alignParentEnd="true"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text2"
+                android:padding="5dp"
+                android:layout_marginStart="5dp"
+                android:id="@+id/playlist_recyclerview" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</FrameLayout>

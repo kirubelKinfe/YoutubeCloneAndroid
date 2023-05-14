@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".VideoDetailsActivity">
+
+    <com.google.android.exoplayer2.ui.StyledPlayerView
+        android:id="@+id/exo_player"
+        android:layout_width="match_parent"
+        android:layout_height="215dp"
+        app:show_buffering="when_playing"
+        app:show_shuffle_button="true" />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:text="Video Title"
+        android:layout_below="@id/exo_player"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="17sp"
+        android:id="@+id/video_title"
+        android:includeFontPadding="false"/>
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/video_title"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="3dp"
+            android:textAlignment="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Views"
+                android:textSize="16sp"
+                android:textColor="@color/colorSecondaryText"
+                android:layout_marginStart="5sp"
+                android:id="@+id/views_count"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorSecondaryText"
+                android:text="Date"
+                android:textSize="16sp"
+                android:layout_marginStart="15sp"
+                android:id="@+id/date"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/linearLayout1"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/user_profile_image"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:src="@drawable/account" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Channel Name"
+            android:layout_gravity="center"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:id="@+id/channel_name"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="3.5M"
+            android:layout_weight="1"
+            android:layout_marginStart="8dp"
+            android:layout_gravity="center"
+            android:textStyle="bold"
+            android:textColor="@color/colorSecondaryText"
+            android:textSize="14sp"
+            android:id="@+id/subscribers"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Subscribe"
+            android:background="@drawable/button_bg"
+            android:layout_marginRight="10dp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:id="@+id/subscribe"/>
+
+    </LinearLayout>
+
+    <HorizontalScrollView
+        android:layout_below="@id/linearLayout2"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/buttons_scroll_view"
+        android:scrollbars="none"
+        android:padding="5dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="10k"
+                android:background="@drawable/like_bg"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:drawablePadding="5dp"
+                app:drawableStartCompat="@drawable/thumb_up"
+                android:id="@+id/like"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@drawable/dislike_bg"
+                android:layout_marginEnd="10dp"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:drawablePadding="5dp"
+                app:drawableStartCompat="@drawable/thumb_down"
+                android:id="@+id/dislike"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Share"
+                android:background="@drawable/button_bg2"
+                android:layout_marginRight="10dp"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:drawablePadding="5dp"
+                app:drawableStartCompat="@drawable/share"
+                android:id="@+id/share"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Download"
+                android:background="@drawable/button_bg2"
+                android:layout_marginRight="10dp"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:drawablePadding="5dp"
+                app:drawableStartCompat="@drawable/download"
+                android:id="@+id/download"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Save"
+                android:background="@drawable/button_bg2"
+                android:layout_marginRight="10dp"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:drawablePadding="5dp"
+                app:drawableStartCompat="@drawable/save"
+                android:id="@+id/save"/>
+        </LinearLayout>
+
+    </HorizontalScrollView>
+
+    <LinearLayout
+        android:layout_below="@id/buttons_scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="5dp"
+        android:padding="10dp"
+        android:background="@drawable/comments_bg"
+        android:id="@+id/comment_section">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2.4k comments"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:id="@+id/comments_count"/>
+        </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="description"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:id="@+id/description"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="show more"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:id="@+id/show_more"/>
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_below="@id/comment_section"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/recycler_view"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        android:padding="5dp"/>
+
+</RelativeLayout>

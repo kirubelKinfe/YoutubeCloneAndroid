@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "742683413882",
+    "firebase_url": "https://androidclone-ce6ab-default-rtdb.firebaseio.com",
+    "project_id": "androidclone-ce6ab",
+    "storage_bucket": "androidclone-ce6ab.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:742683413882:android:923045794b5d60240fdac3",
+        "android_client_info": {
+          "package_name": "com.example.youtubeandroidclone"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "742683413882-o085f1a2hn7p77h4j7c1i2qm0eqi8qsj.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.youtubeandroidclone",
+            "certificate_hash": "f03be7661cfdd859e22c40d3f5088b8cbc26137e"
+          }
+        },
+        {
+          "client_id": "742683413882-4d9rphndbpjh16jtbi7j5t8usssp7o03.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDLMUnkDZedt0EAkCMxhoGsedAyivjah6k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "742683413882-2a2g4fgcue364gn06gnilep8pjk4jiob.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

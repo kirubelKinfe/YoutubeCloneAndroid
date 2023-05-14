@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:title="Home"
+        android:id="@+id/home"
+        android:icon="@drawable/home"
+        app:showAsAction="ifRoom" />
+    <item
+        android:title="Explore"
+        android:id="@+id/explore"
+        android:icon="@drawable/explore"
+        app:showAsAction="ifRoom" />
+    <item
+        android:title="Publish"
+        android:id="@+id/publish"
+        android:icon="@drawable/publish"
+        app:showAsAction="ifRoom" />
+    <item
+        android:title="Subscriptions"
+        android:id="@+id/subscriptions"
+        android:icon="@drawable/subscriptions"
+        app:showAsAction="ifRoom" />
+    <item
+        android:title="Library"
+        android:id="@+id/library"
+        android:icon="@drawable/library"
+        app:showAsAction="ifRoom" />
+</menu>

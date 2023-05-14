@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_margin="8dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Use Youtube Clone As..."
+            android:textSize="20dp"
+            android:textColor="#212121" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="14dp"
+            android:background="@drawable/edittext_bg"
+            android:hint="Channel Name"
+            android:layout_marginTop="10dp"
+            android:inputType="text"
+            android:id="@+id/input_channel_name"
+            android:textColor="#212121"
+            android:maxLines="1"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="14dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/edittext_bg"
+            android:hint="Description"
+            android:inputType="text"
+            android:id="@+id/input_description"
+            android:textColor="#212121"
+            android:maxLines="1"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="By creating new channel you accept our terms and condition"
+            android:layout_marginTop="20dp"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:id="@+id/text_create_channel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Create Channel"
+            android:textAllCaps="true"
+            android:textColor="@color/colorPrimaryText"
+            android:layout_marginTop="10dp"
+            android:textSize="18sp"
+            android:gravity="end"
+            android:includeFontPadding="false"/>
+    </LinearLayout>
+
+</RelativeLayout>
